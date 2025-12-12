@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: 'Verdana', sans-serif; /* خط أنيق جديد */
+    background-image: url('252eefc47fe3f2084eb29ab076216413.jpg'); /* الخلفية الجديدة */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Products Section */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* صغرنا المساحة */
+    gap: 12px;
+    padding: 15px;
+    margin-top: 15px;
+    justify-items: center;
+}
+
+.product {
+    background-color: rgba(0, 0, 0, 0.7); /* خلفية شفافة داكنة */
+    border-radius: 10px;
+    padding: 12px;
+    width: 160px; /* صغرنا حجم المربع */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover .product-img {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 14px; /* صغرنا حجم الاسم */
+    margin: 6px 0 4px 0;
+    color: #fff;
+    font-family: 'Tahoma', sans-serif; /* خط أنيق للأسماء */
+}
+
+.product p {
+    font-size: 13px; /* صغرنا السعر */
+    font-weight: bold;
+    color: #ff6f61;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.product .price {
+    font-size: 13px;
+    color: #ffcc66;
+    margin-top: 4px;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 13px; /* صغرنا الخط داخل الزرار */
+}
+
+button:hover {
+    background-color: #f55a4e;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 18px;
+    margin-top: 20px;
+}
